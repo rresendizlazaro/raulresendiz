@@ -1,0 +1,335 @@
+/*Fuentes*/
+@font-face{ 
+	font-family: 'ColabThi';
+	src: url('../fuentes/ColabThi-webfont.eot');
+	src: url('../fuentes/ColabThi-webfont.eot?iefix') format('eot'),
+	     url('../fuentes/ColabThi-webfont.woff') format('woff'),
+	     url('../fuentes/ColabThi-webfont.ttf') format('truetype'),
+	     url('../fuentes/ColabThi-webfont.svg') format('svg');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+body{
+    background: url('../img/fondo.jpg');
+    background-size: cover;
+    /*Muestra la imagen en todo momento*/
+    background-attachment: fixed;
+}
+
+#inicio{
+    width: 40%;
+    /*Centra el cuadro*/
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-image: url('../img/inicio.jpg');
+    background-size: cover;
+    box-shadow: 0px 0px 20px black;
+}
+
+#titulo{
+    font-family: ColabThi;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    background-image: url('../img/blue3.jpg');
+    color: white;
+    text-align: center;
+    width: 25%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+/*Estilo del recuadro central*/
+#global{
+    width: 65%;
+    /*Centra el cuadro*/
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 20px black;
+}
+
+#logop{
+    font-family: ColabThi;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    background-image: url('../img/blue3.jpg');
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+#logoh{
+    font-family: ColabThi;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    background-image: url('../img/blue3.jpg');
+    color: white;
+    text-align: center;
+    width: 70%;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+#logoo{
+    font-family: ColabThi;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 75px;
+    background-image: url('../img/blue3.jpg');
+    color: white;
+    text-align: center;
+    width: 30%;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase
+}
+
+#menu{
+    font-family: ColabThi;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover{
+    background-image: url('../img/blue3.jpg');
+    -moz-transform: translate(0px,15px);  
+    -webkit-transform: translate(0px,15px);  
+    transform: translate(0px,15px);
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#texto{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#post{
+    width: 55%;
+    float: left;
+    font-family: ColabThi;
+}
+
+.post{
+    padding: 7px;
+    text-align: justify;
+}
+
+#post h1{
+    font-size: 30px;
+    color: black;
+}
+
+#post h2{
+    font-size: 25px;
+    color: black;
+}
+
+#post p{
+    font-size: 20px;
+    color: #333;
+}
+
+.post .date{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+#sidebar{
+    font-family: ColabThi;
+    width: 38%;
+    float: right;
+    background-image: url('../img/blue5.jpg');
+    color: white;
+    padding: 15px;
+}
+
+#sidebar:hover{
+    -moz-transform: scale(1.1);  
+    -webkit-transform: scale(1.1);  
+    transform: scale(1.05);
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+#sidebar h4 span{
+    color: white;
+    padding: 5px;
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+#eventos{
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 17px;
+    display: inline;
+}
+
+#metas{
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 17px;
+    display: inline;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+#contraseña{
+    color: white;
+}
+
+form input[type="submit"]{
+    font-family: ColabThi;
+    font-size: 25px;
+    background: rgba(51, 51, 51, 0.70);
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    font-family: ColabThi;
+    color: white;
+    height: 90px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+#footer2{
+    font-family: ColabThi;
+    color: white;
+    height: 139px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
+}
+
+.subir{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+.subir:hover{
+    -moz-transform: translate(0px,10px);  
+    -webkit-transform: translate(0px,10px);  
+    transform: translate(0px,-10px);
+}
+
+#login,
+#nombre,
+#contraseña,
+#inicionombre,
+#iniciocontraseña{
+    font-family: ColabThi;
+    font-size: 25px;
+}
