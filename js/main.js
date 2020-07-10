@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     //Link
     $("#linkedin").click(function(){
-        window.open("https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/");
+        window.open("https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/?originalSubdomain=mx");
     });
 
     //Scroll arriba
