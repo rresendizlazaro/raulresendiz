@@ -1,0 +1,243 @@
+/*Fuentes*/
+@font-face{ 
+	font-family: 'SEASIDERESORT';
+	src: url('../fonts/SEASRN__-webfont.eot');
+	src: url('../fuentes/SEASRN__-webfont.eot?iefix') format('eot'),
+	     url('../fonts/SEASRN__-webfont.woff') format('woff'),
+	     url('../fonts/SEASRN__-webfont.ttf') format('truetype'),
+	     url('../fonts/SEASRN__-webfont.svg') format('svg');
+}
+
+@font-face{ 
+	font-family: 'CaviarDreams';
+	src: url('../fonts/CaviarDreams-webfont.eot');
+	src: url('../fuentes/CaviarDreams-webfont.eot?iefix') format('eot'),
+	     url('../fonts/CaviarDreams-webfont.woff') format('woff'),
+	     url('../fonts/CaviarDreams-webfont.ttf') format('truetype'),
+	     url('../fonts/CaviarDreams-webfont.svg') format('svg');
+}
+
+@font-face{ 
+	font-family: 'RobotoCondensed';
+	src: url('../fonts/RobotoCondensed-Regular-webfont.eot');
+	src: url('../fuentes/RobotoCondensed-Regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff'),
+	     url('../fonts/RobotoCondensed-Regular-webfont.ttf') format('truetype'),
+	     url('../fonts/RobotoCondensed-Regular-webfont.svg') format('svg');
+}
+
+/*==========================Estructura principal============================*/
+#global{
+    font-family: CaviarDreams;
+    background-image: url("../img/fondo8.png");
+    background-size: cover;
+    font-size: 1.5vw;
+    background-position: center;
+}
+/*=================Título====================*/
+#principal{
+    background-color: transparent;
+}
+
+#logoI{
+    margin: 0px auto;
+    width: 80%;
+    height: 350px;
+    background-image: url("../img/image2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#logoIn{
+    margin: 0px auto;
+    width: 80%;
+    height: 350px;
+    background-image: url("../img/image6.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: left
+}
+
+#logoC{
+    margin: 0px auto;
+    width: 80%;
+    height: 350px;
+    background-image: url("../img/image5.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#logoE{
+    margin: 0px auto;
+    width: 80%;
+    height: 350px;
+    background-image: url("../img/image4.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#logoK{
+    margin: 0px auto;
+    width: 80%;
+    height: 350px;
+    background-image: url("../img/image3.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#logoI h1,
+#logoIn h1,
+#logoK h1,
+#logoC h1,
+#logoE h1{
+    font-family: RobotoCondensed;
+    font-size: 3.5vw;
+    color: #ccc;
+    padding-top: 285px;
+    padding-left: 20px;
+    background-color: white;
+    background-image: url("../img/fondo8.png");
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#linkedin{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/*==========================Menú===========================*/
+
+#menu{
+    margin: 0px auto;
+    font-family: CaviarDreams;
+    background: #ccc;
+    width: 80%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#menu ul{
+    line-height: 47px;
+    list-style: none;
+}
+
+#menu li{
+    font-size: 1.5vw;
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+    width: 16%;
+}
+
+#menu ul li:hover{
+    line-height: 46px;
+    border-radius: 15px;
+    -moz-transform: translate(0px,5px);  
+    -webkit-transform: translate(0px,5px);  
+    transform: translate(0px,5px);
+    font-weight: bold;
+}
+
+#menu a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*=========================Contenido=============================*/
+
+#post{
+    width: 80%;
+    height: auto;
+    background-color: #eee;
+    opacity: 0.8;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post{
+    padding: 20px;
+    text-align: justify;
+}
+
+.post h2{
+    font-size: 30px;
+    color: #333;
+}
+
+.post p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.post p img{
+    margin: 0px auto;
+    max-width: 20%;
+    max-height: 20%;
+}
+/*=========================Pie de página==========================*/
+
+footer{
+    font-family: CaviarDreams;
+    color: white;
+    height: 50px;
+    width: 77%;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+    opacity: 0.9;
+}
+
+.subir{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+.subir:hover{
+    -moz-transform: translate(0px,7px);  
+    -webkit-transform: translate(0px,7px);  
+    transform: translate(0px,-7px);
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
+}
+
+/*Responsive web design*/
+@media screen and (max-width: 800px){
+
+}
