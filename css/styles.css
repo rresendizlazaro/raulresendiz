@@ -31,7 +31,7 @@
     font-family: CaviarDreams;
     background-image: url("../img/fondo8.png");
     background-size: cover;
-    font-size: 2vw;
+    font-size: 27px;
     background-position: center;
 }
 /*=================Título====================*/
@@ -58,7 +58,8 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: left
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #logoC{
@@ -71,6 +72,7 @@
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 #logoE{
@@ -83,6 +85,7 @@
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 #logoK{
@@ -95,6 +98,7 @@
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 #logoI h1,
@@ -103,9 +107,9 @@
 #logoC h1,
 #logoE h1{
     font-family: RobotoCondensed;
-    font-size: 5vw;
+    font-size: 6vw;
     color: #ccc;
-    padding-top: 250px;
+    padding-top: 230px;
     padding-left: 20px;
     background-color: white;
     background-image: url("../img/fondo8.png");
@@ -148,7 +152,6 @@ img {
 
 #menu li{
     font-size: 2vw;
-    height: 46px;
     display: inline-block;
     transition: all 300ms;
     width: 19%;
@@ -173,6 +176,17 @@ img {
 
 /*=========================Contenido=============================*/
 
+#content{
+    width: 50%;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+#slider{
+    margin: 0px auto;
+    padding-left: 25%;
+}
+
 #post{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -192,17 +206,43 @@ img {
     line-height: 25px;
 }
 
-#obj{
+#estudios{
     padding-top: 20px;
+    padding-bottom: 40px;
     margin: 0px auto;
     height: auto;
     width: 90%;
     line-height: 25px;
 }
 
-#estudios{
+#obj{
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    height: auto;
+    width: 90%;
+    line-height: 25px;
+}
+
+#proyectos{
+    margin: 0px auto;
+    height: auto;
+    width: 90%;
+    line-height: 25px;
+}
+
+#trabajos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    height: auto;
+    width: 90%;
+    line-height: 25px;
+}
+
+#web{
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0px auto;
     height: auto;
     width: 90%;
@@ -254,6 +294,7 @@ form textarea{
     width: 60%;
     height: 100px;
     box-shadow: 0px 0px 10px black;
+    margin-bottom: 10px;
     display: block;
 }
 
@@ -281,14 +322,67 @@ form input[type="submit"]:hover{
     font-family: CaviarDreams;
 }
 
+#box h2{
+    padding: 3%;
+}
+
+
 #acordeon{
     margin-top: 20px;
+    margin: 0px auto;
+    width: 70%;
 }
+
+#contact{
+    padding: 30px;
+    text-align: justify;
+}
+
+/*=============Barras de progreso===============*/
+#sw,
+#ai,
+#nx,
+#se,
+#a,
+#cat,
+#max,
+#py,
+#j,
+#c,
+#cccc,
+#k,
+#js,
+#pss,
+#lv,
+#h,
+#css,
+#jq,
+#ts,
+#an,
+#in,
+#off,
+#lin,
+#cu,
+#ps{
+    width: 50%;
+}
+
+#acordeon .ui-accordion-header{ 
+    background: rgb(0, 28, 185);
+    color: white;
+}
+
+#acordeon .ui-accordion-content{
+    background-color: #ccc;
+    background-image: none;
+    color: black;
+ }
 
 /*=========================Pie de página==========================*/
 
 footer{
     font-family: CaviarDreams;
+    font-size: 25px;
     color: white;
     height: 50px;
     width: 77%;
@@ -321,6 +415,9 @@ footer{
 
 /*Responsive web design*/
 @media screen and (max-width: 800px){
+    #global{
+        font-size: 18px;
+    }
     #logoI{
         width: 95%;
     }
@@ -345,11 +442,72 @@ footer{
         width: 95%;
     }
 
+    #menu li{
+        font-size: 20px;
+        width: 40%;
+    }
+
+    #slider{
+        padding-left: 0%;
+    }
+
     #post{
         width: 95%;
     }
 
-    #footer{
-        width: 98%;
+    #soy{
+        line-height: 18px;
+    }
+    
+    #estudios{
+        line-height: 18px;
+    }
+
+    #proyectos{
+        line-height: 18px;
+    }
+
+    #trabajos{
+        line-height: 18px;
+    }
+
+    #web{
+        line-height: 18px;
+    }
+    
+    #izq{
+        line-height: 18px;
+    }
+    
+    #der{
+        line-height: 3px;
+    }
+    
+    #obj{
+        line-height: 18px;
+    }
+
+    form input[type="text"]{
+        font-size: 20px;
+        width: 80%;
+    }
+    
+    form textarea{
+        width: 90%;
+        height: 100px;
+        font-size: 20px;
+    }
+    
+    form input[type="submit"]{
+        font-size: 25px;
+    }
+
+    footer{
+        width: 86%;
+        font-size: 12px;
+    }
+
+    #box{
+        width: 95%;
     }
 }
