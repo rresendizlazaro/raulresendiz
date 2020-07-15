@@ -176,12 +176,6 @@ img {
 
 /*=========================Contenido=============================*/
 
-#content{
-    width: 50%;
-    height: 200px;
-    overflow-y: scroll;
-}
-
 #slider{
     margin: 0px auto;
     padding-left: 25%;
