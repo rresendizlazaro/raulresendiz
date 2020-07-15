@@ -4,10 +4,14 @@
     <title>Raúl Reséndiz Contacto</title>
     <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <!--Animciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Responsive web design-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body id="global">
     <!--Contenedor principal-->
@@ -33,7 +37,18 @@
             <section>
                 <!--Contenido de la izquierda-->
                 <div id="post">
-                    <form action="mailto:rresendizlazaro@hotmail.com" method="post" name="form1">
+                    <div id="contact"data-aos="fade-up" data-aos-duration="900" data-aos-once="false">
+                        <h3>Correos:</h3>
+                        <h4>rresendizlazaro@hotmail.com</h4>
+                        <h4>rresendizlazaro@gmail.com</h4>
+                        <h3>Número de celular:</h3>
+                        <h4>5620991693</h4>
+                        <h3>Número de teléfono:</h3>
+                        <h4>5557756640</h4>
+                        <h3>Dirección:</h3>
+                        <h4>Ecatepec, Estado de México, Colonia jardines de Santa Clara, C.P. 55450</h4>
+                    </div>
+                    <form action="mailto:rresendizlazaro@hotmail.com" method="post" name="form1" data-aos="fade-left" data-aos-duration="900" data-aos-once="false">
                         <label for="nombre">Nombre: </label>
                         <input id="nombre" name="nombre" type="text" />
                         <label for="email">Email: </label>
@@ -45,6 +60,13 @@
                 </div>
             </section>
         </header>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 3000,
+                    once: true,
+                });
+            </script>
     </section>
     <footer>
         Web de Raúl Reséndiz, todos los derechos reservados 2020

@@ -4,6 +4,8 @@
     <title>Raúl Reséndiz Conocimiento</title>
     <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <!--Animciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Responsive web design-->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--Jquery-->
@@ -41,55 +43,81 @@
             <section id="content">
                 <!--Contenido de la izquierda-->
                 <div id="box">
-                    <h2>Información sobre el software que manejo</h2>
+                    <h2>Información sobre el software que utilizo e idiomas</h2>
+                    <img src="img/software.png"  data-aos="zoom-in" data-aos-duration="500" data-aos-once="false"/>
                     <!--Cargar acordeon-->
-                    <div id="acordeon">
-                        <h3>Software de diseño</h3>
+                    <div id="acordeon"  data-aos="flip-up" data-aos-duration="500" data-aos-once="false">
+                        <h3>Diseño</h3>
                         <div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled 
-                                it to make a type specimen book.
-                            </p>
+                            <ul>
+                                <li>Solidworks<div id="sw"></div></li>
+                                <li>Autodesk Inventor<div id="ai"></div></li>
+                                <li>Siemens NX<div id="nx"></div></li>
+                                <li>Siemens Solid Edge<div id="se"></div></li>
+                                <li>Autodesk Autocad<div id="a"></div></li>
+                                <li>Catia<div id="cat"></div></li>
+                                <li>Autodesk 3d's Max<div id="max"></div></li>
+                            </ul>
                         </div>
 
-                        <h3>Lenguajes de programación</h3>
+                        <h3>Programación</h3>
                         <div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled 
-                                it to make a type specimen book.
-                            </p>
+                            Lenguajes de programación
+                            <ul>
+                                <li>Python<div id="py"></div></li>
+                                <li>Java<div id="j"></div></li>
+                                <li>C<div id="c"></div></li>
+                                <li>C#<div id="cccc"></div></li>
+                                <li>Kotlin<div id="k"></div></li>
+                                <li>JavaScript<div id="js"></div></li>
+                                <li>Processing<div id="pss"></div></li>
+                                <li>LabView<div id="lv"></div></li>
+                            </ul>
+                            Diseño web
+                            <ul>
+                                <li>HTML 5<div id="h"></div></li>
+                                <li>CSS 3<div id="css"></div></li>
+                                <li>JQuery<div id="jq"></div></li>
+                                <li>Typescript<div id="ts"></div></li>
+                                <li>Angular<div id="an"></div></li>
+                            </ul>
+                            IDE's
+                            <ul>
+                                <li>Apache NetBeans</li>
+                                <li>Visual Studio Code</li>
+                                <li>Android Studio</li>
+                                <li>Sublime Text</li>
+                                <li>Pycharm</li>
+                                <li>IntelliJ IDEA</li>
+                            </ul>
                         </div>
-
-                        <h3>Diseño web</h3>
+                        <h3>Idiomas</h3>
                         <div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled 
-                                it to make a type specimen book.
-                            </p>
+                            <ul>
+                                <li>Español (nativo)</li>
+                                <li>Inglés<div id="in"></div></li>
+                            </ul>
                         </div>
                         <h3>Otros</h3>
                         <div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing
-                                and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s, 
-                                when an unknown printer took a galley of type and scrambled 
-                                it to make a type specimen book.
-                            </p>
+                            <ul>
+                                <li>Paqueteria Office<div id="off"></div></li>
+                                <li>Sistema operativo Linux (Ubuntu)<div id="lin"></div></li>
+                                <li>Ultimaker Cura<div id="cu"></div></li>
+                                <li>Adobe Photoshop<div id="ps"></div></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
         </header>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 3000,
+                    once: true,
+                });
+            </script>
     </section>
     <footer>
         Web de Raúl Reséndiz, todos los derechos reservados 2020
