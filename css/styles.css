@@ -34,6 +34,10 @@
     font-size: 27px;
     background-position: center;
 }
+
+.clearfix {
+    overflow: auto;
+  }
 /*=================Título====================*/
 #principal{
     background-color: transparent;
@@ -177,6 +181,20 @@ img {
 #slider{
     margin: 0px auto;
     padding-left: 25%;
+    margin-top: 30px;
+    opacity: 1;
+}
+
+#slider .bx-wrapper, 
+#slider .bx-viewport {
+    height: 400px !important;
+}
+
+#slider .bx-wrapper img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
 }
 
 #post{
@@ -185,7 +203,7 @@ img {
     width: 80%;
     height: auto;
     background-color: #eee;
-    opacity: 0.85;
+    opacity: 0.9;
     margin: 0px auto;
     font-family: CaviarDreams;
     text-align: justify;
@@ -204,7 +222,7 @@ img {
     margin: 0px auto;
     height: auto;
     width: 90%;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 #obj{
@@ -213,14 +231,23 @@ img {
     margin: 0px auto;
     height: auto;
     width: 90%;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 #proyectos{
     margin: 0px auto;
     height: auto;
     width: 90%;
-    line-height: 25px;
+    line-height: 30px;
+}
+
+#intereses{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    height: auto;
+    width: 90%;
+    line-height: 30px;
 }
 
 #trabajos{
@@ -229,7 +256,16 @@ img {
     margin: 0px auto;
     height: auto;
     width: 90%;
-    line-height: 25px;
+    line-height: 30px;
+}
+
+#trabajos a{
+    color: black;
+}
+
+iframe{
+    width: 560px;
+    height: 315px;
 }
 
 #web{
@@ -238,7 +274,7 @@ img {
     margin: 0px auto;
     height: auto;
     width: 90%;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 #izq{
@@ -322,7 +358,13 @@ form input[type="submit"]:hover{
 #acordeon{
     margin-top: 20px;
     margin: 0px auto;
-    width: 70%;
+    width: 90%;
+}
+
+#acordeon img{
+    max-width: 70%;
+    max-height: 70%;
+    margin: 0px auto;
 }
 
 #contact{
@@ -443,6 +485,17 @@ footer{
         padding-left: 0%;
     }
 
+    #acordeon img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0px auto;
+    }
+
+    #slider .bx-wrapper, 
+    #slider .bx-viewport {
+        height: 300px !important;
+    }
+
     #post{
         width: 95%;
     }
@@ -459,8 +512,13 @@ footer{
         line-height: 18px;
     }
 
+    #intereses{
+        line-height: 18px;   
+    }
+
     #trabajos{
         line-height: 18px;
+        margin-bottom: 30px;
     }
 
     #acordeon{
@@ -477,6 +535,12 @@ footer{
     
     #der{
         line-height: 3px;
+    }
+
+    iframe{
+        margin: 0px auto;
+        width: 280px;
+        height: 200px;
     }
     
     #obj{
@@ -500,7 +564,7 @@ footer{
 
     footer{
         width: 86%;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #box{
