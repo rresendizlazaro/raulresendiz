@@ -226,7 +226,7 @@ img {
 }
 
 #obj{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     margin: 0px auto;
     height: auto;
@@ -283,16 +283,17 @@ iframe{
     margin: 0px auto;
     line-height: 25px;
     float: left;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
 }
 
 #der{
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     width: 35%;
     margin: 0px auto;
-    height: 300px;
     line-height: 5px;
-    float: right;
+    float: left;
 }
 
 #der img{
@@ -517,7 +518,15 @@ footer{
     }
 
     #intereses{
-        line-height: 18px;   
+        line-height: 18px;  
+    }
+
+    #post h2{
+        text-align: center;
+    }
+
+    #box h2{
+        text-align: center;
     }
 
     #trabajos{
@@ -538,7 +547,7 @@ footer{
     }
     
     #der{
-        line-height: 3px;
+        height: 60vw;
     }
 
     iframe{
