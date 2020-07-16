@@ -582,5 +582,6 @@ footer{
 
     #box{
         width: 95%;
+        line-height: 18px; 
     }
 }
