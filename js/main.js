@@ -41,9 +41,11 @@ $(document).ready(function(){
     //Slider
     if(window.location.href.indexOf('experiencia') > -1){
         $('.galeria').bxSlider({
-            mode: 'fade',
-            captions: true,
+            mode: 'horizontal',
+            auto: true,
+            captions: false,
             adaptiveHeight: true,
+            responsive: true,
             slideWidth: 500
         });
     }
