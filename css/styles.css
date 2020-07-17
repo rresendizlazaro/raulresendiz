@@ -197,6 +197,11 @@ img {
     opacity: 1;
 }
 
+#image .bx-wrapper, 
+#image .bx-viewport {
+    height: 440px !important;
+}
+
 #post{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -498,6 +503,11 @@ footer{
     #slider .bx-wrapper, 
     #slider .bx-viewport {
         height: 300px !important;
+    }
+
+    #image .bx-wrapper, 
+    #image .bx-viewport {
+        height: 150px !important;
     }
 
     #post{
