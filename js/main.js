@@ -50,6 +50,17 @@ $(document).ready(function(){
         });
     }
 
+    if(window.location.href.indexOf('intereses') > -1){
+        $('.galeria').bxSlider({
+            mode: 'horizontal',
+            auto: true,
+            captions: false,
+            adaptiveHeight: true,
+            responsive: true,
+            slideWidth: 1024
+        });
+    }
+
     //Link
     $("#linkedin").click(function(){
         window.open("https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/");
