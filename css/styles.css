@@ -111,7 +111,7 @@
 #logoC h1,
 #logoE h1{
     font-family: RobotoCondensed;
-    font-size: 6vw;
+    font-size: 5vw;
     color: #ccc;
     padding-top: 230px;
     padding-left: 20px;
@@ -231,7 +231,6 @@ img {
 }
 
 #obj{
-    padding-top: 10px;
     padding-bottom: 20px;
     margin: 0px auto;
     height: auto;
@@ -293,7 +292,7 @@ iframe{
 
 #der{
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     width: 35%;
     margin: 0px auto;
     line-height: 5px;
@@ -429,7 +428,6 @@ footer{
     margin: 0px auto;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 50px;
     line-height: 47px;
     opacity: 0.9;
 }
