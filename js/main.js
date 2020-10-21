@@ -241,4 +241,31 @@ $(document).ready(function(){
         }, 500);
         return false;
     });
+
+    if(window.location.href.indexOf('contacto') > -1){
+        document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+        function submitForm(e){
+            e.preventDefault();
+
+            let name = document.querySelector("#nombre").value;
+            let email = document.querySelector("#email").value;
+            let message = document.querySelector("#opinion").value;
+
+            sendEmail(name, email, message);
+        }
+
+        function sendEmail(name, email, message){
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: 'rresendizlazaro@gmail.com',
+                Password: "ivzdodflllotwbms",
+                To: 'rresendizlazaro@gmail.com',
+                From: 'rresendizlazaro@gmail.com',
+                Subject: `${name} sent you a message`,
+                Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+            }).then((message) => alert("Éxito al enviar correo"));
+        }
+    }
+
 });
