@@ -233,15 +233,27 @@ $(document).ready(function(){
         .css({ 'background': '#33ff00', 'padding': '3.5%' });
     }
 
-    //Scroll arriba
-    $(".subir").click(function(e){
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop:0
-        }, 500);
-        return false;
-    });
+    //Scroll
+    var windowWidth = $(window).width();
+    if(windowWidth > 800){
+        $("#top").click(function(e){
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop:0
+            }, 500);
+            return false;
+        });
+    
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 400 ){
+                $('#top').slideDown(500);
+            } else {
+                $('#top').slideUp(100);
+            }
+        });
+    }
 
+    //API correo
     if(window.location.href.indexOf('contacto') > -1){
         document.querySelector(".contact-form").addEventListener("submit", submitForm);
 
