@@ -1,91 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raúl Reséndiz</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="experiencia.html" as="document">
+
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <!--Animciones-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--Responsive web design-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4d138e7a7c.js" crossorigin="anonymous"></script>
     <!--JavaScript-->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body id="global">
-    <!--Contenedor principal-->
-    <section>
-        <header id="principal">
-            <!--Titulo-->
-            <div id="logoI">
-                <div id="linkedin"><img src="img/l.png"></div>
-                <h1>Ing. Raúl Eduardo Reséndiz Lázaro</h1>
-            </div>
-            <!--div adicional para arreglar estructura-->
-            <div class="clearfix"></div>
-            <!--Menú-->
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="conocimiento.html">Conocimiento</a></li>
-                    <li><a href="intereses.html">Intereses</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--Contenido-->
-        <section id="content">
-            <!--Contenido de la izquierda-->
-            <div id="post">
-                <div id="soy" data-aos="zoom-in-down" data-aos-duration="500">
-                    <h2>¿Quién soy yo?</h2>
-                    Soy una persona honesta y responsable, me gusta desarrollar
-                    proyectos en los que involucre la mayor capacidad de mis conocimientos,
-                    dentro de estos hago todo lo posible por hacer efectivo el
-                    tiempo de desarrollo y cumplir con fechas de entrega, prefiero
-                    tomar la mayor parte de las responsabilidades incluyendo ser el
-                    lider, ya que se me facilita la organización y distribución de
-                    los roles de cada integrante.
-                </div>
-                <div id="estudios" data-aos="fade-down"  data-aos-duration="500">
-                    <div id="izq">
-                        <h2>Historia académica</h2>
+
+<body>
+    <!--Header-->
+    <header class="header contenedor">
+        <div class="logo">
+            <div class="social"><a href="https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/"><i class="fab fa-linkedin social__texto"></i></a></div>
+            <h1 class="nombre">Ing. Raúl Eduardo Reséndiz Lázaro</h1>
+        </div>
+    </header>
+    <!--Menú-->
+    <div class="contenedor menu">
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__enlace"><i class="fas fa-house-user"></i> Inicio</a>
+            <a href="experiencia.html" class="navegacion__enlace"><i class="fas fa-briefcase"></i> Experiencia</a>
+            <a href="conocimiento.html" class="navegacion__enlace"><i class="fas fa-brain"></i> Habilidades</a>
+            <a href="contacto.html" class="navegacion__enlace"><i class="far fa-id-card"></i> Contacto</a>
+        </nav>
+    </div>
+    <!--Contenido-->
+    <div class="contenedor contenido-principal">
+        <!--Contenido de la izquierda-->
+        <main class="informacion">
+            <article class="entrada">
+                <h3>¿Quién soy yo?</h3>
+                Soy una persona honesta y responsable, me gusta desarrollar
+                proyectos en los que involucre la mayor capacidad de mis conocimientos,
+                dentro de estos hago todo lo posible por hacer efectivo el
+                tiempo de desarrollo y cumplir con fechas de entrega, prefiero
+                tomar la mayor parte de las responsabilidades incluyendo ser el
+                lider, ya que se me facilita la organización y distribución de
+                los roles de cada integrante.
+            </article>
+            <article class="entrada">
+                <h3>Historia académica</h3>
+
+                <div class="especial">
+                    <div class="especial__texto">
                         Estudié Ingeniería mecatrónica en la <b>Facultad de Ingeniería</b> de la <b>UNAM</b>.
                         <br>
                         Promedio: <b>8.9</b>
                         <br>
-                        Me titulé por medio de tesis. 
+                        Me titulé por medio de tesis.
                         Con el tema <b>"Circuito carciovascular para pruebas de válvulas cardiacas"</b>,
                         a grandes rasgos es la implementación de una interfaz gráfica para el control
-                        de un dispositivo probador de válvulas cardiacas.   
+                        de un dispositivo probador de válvulas cardiacas.
                     </div>
-                    <div id="der" data-aos="fade-up" data-aos-duration="900">
-                        <img src="img/unam.png"/>
-                        <img src="img/fi.png"/>
+                    <div class="especial__imagen">
+                        <picture>
+                            <source loading="lazy" srcset="img/unam.webp" type="image/webp">
+                            <img loading="lazy" src="img/unam.png" />
+                        </picture>
+                        <picture>
+                            <source loading="lazy" srcset="img/fi.webp" type="image/webp">
+                            <img loading="lazy" src="img/fi.png" />
+                        </picture>
                     </div>
                 </div>
-                <div id="obj" data-aos="flip-up" data-aos-duration="1000">
-                    <h2>Objetivo profesional</h2>
-                    Formar parte de una empresa o institución enfocada a la ingeniería,
-                    para brindar soluciones eficaces en mecánica, eléctrica, electrónica
-                    y computación, que permitan desarrollarme en el ámbito profesional.
-                </div>
-            </div>
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init({
-                    duration: 3000,
-                    once: true,
-                });
-            </script>
-        </section>
-    </section>
-    <footer>
-        Web de Raúl Reséndiz, todos los derechos reservados 2020
+            </article>
+            <article class="entrada">
+                <h3>Objetivo profesional</h3>
+                Formar parte de una empresa o institución enfocada a la ingeniería,
+                para brindar soluciones eficaces en mecánica, eléctrica, electrónica
+                y computación, que permitan desarrollarme en el ámbito profesional.
+            </article>
+        </main>
+    </div>
+    <footer class="footer contenedor">
+        <div class="footer__texto">
+            Web de Raúl Reséndiz &copy;todos los derechos reservados 2020
+        </div>
     </footer>
     <div id="top"><i class="fa fa-chevron-circle-up"></i></div>
 </body>
+
+</html>

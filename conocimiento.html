@@ -1,128 +1,286 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-    <title>Raúl Reséndiz Conocimiento</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raúl Reséndiz Habilidades</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="experiencia.html" as="document">
+
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <!--Animciones-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--Responsive web design-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css"/>
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css"/>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4d138e7a7c.js" crossorigin="anonymous"></script>
     <!--JavaScript-->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body id="global">
-    <!--Contenedor principal-->
-    <section>
-        <header id="principal">
-            <!--Titulo-->
-            <div id="logoK">
-                <div id="linkedin"><img src="img/l.png"></div>
-                <h1>Conocimiento</h1>
-            </div>
-            <!--div adicional para arreglar estructura-->
-            <div class="clearfix"></div>
-            <!--Menú-->
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="conocimiento.html">Conocimiento</a></li>
-                    <li><a href="intereses.html">Intereses</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <section id="content">
-                <!--Contenido de la izquierda-->
-                <div id="box">
-                    <h2   data-aos="flip-down" data-aos-duration="500">Información sobre el software que utilizo e idiomas</h2>
-                    <img src="img/software.png"  data-aos="fade-up" data-aos-duration="1000"/>
-                    <!--Cargar acordeon-->
-                    <div id="acordeon"  data-aos="fade-right" data-aos-duration="500">
-                        <h3>Diseño</h3>
-                        <div>
-                            <ul>
-                                <li>Solidworks<div id="sw"></div></li>
-                                <li>Autodesk Inventor<div id="ai"></div></li>
-                                <li>Siemens NX<div id="nx"></div></li>
-                                <li>Siemens Solid Edge<div id="se"></div></li>
-                                <li>Autodesk Autocad<div id="a"></div></li>
-                                <li>Catia<div id="cat"></div></li>
-                                <li>Autodesk 3d's Max<div id="max"></div></li>
-                            </ul>
-                        </div>
 
-                        <h3>Programación</h3>
-                        <div>
-                            Lenguajes de programación
+<body>
+    <!--Header-->
+    <header class="header1 contenedor">
+        <div class="logo">
+            <div class="social"><a
+                    href="https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/"><i
+                        class="fab fa-linkedin social__texto"></i></a></div>
+            <h1 class="nombre">Habilidades</h1>
+        </div>
+    </header>
+    <!--Menú-->
+    <div class="contenedor menu">
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__enlace"><i class="fas fa-house-user"></i> Inicio</a>
+            <a href="experiencia.html" class="navegacion__enlace"><i class="fas fa-briefcase"></i> Experiencia</a>
+            <a href="conocimiento.html" class="navegacion__enlace"><i class="fas fa-brain"></i> Habilidades</a>
+            <a href="contacto.html" class="navegacion__enlace"><i class="far fa-id-card"></i> Contacto</a>
+        </nav>
+    </div>
+    <!--Contenido-->
+    <div class="contenedor contenido-principal">
+        <!--Contenido de la izquierda-->
+        <main class="informacion">
+            <article class="entrada">
+                <h3>Diseño</h3>
+                <div class="elementos">
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/sw.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            SolidWorks
+                        </div>
+                        <div class="elemento__descripcion">
                             <ul>
-                                <li>Python<div id="py"></div></li>
-                                <li>Java<div id="j"></div></li>
-                                <li>C<div id="c"></div></li>
-                                <li>C#<div id="cccc"></div></li>
-                                <li>Kotlin<div id="k"></div></li>
-                                <li>JavaScript<div id="js"></div></li>
-                                <li>Processing<div id="pss"></div></li>
-                                <li>LabView<div id="lv"></div></li>
-                            </ul>
-                            Diseño web
-                            <ul>
-                                <li>HTML 5<div id="h"></div></li>
-                                <li>CSS 3<div id="css"></div></li>
-                                <li>JQuery<div id="jq"></div></li>
-                                <li>Typescript<div id="ts"></div></li>
-                                <li>Angular<div id="an"></div></li>
-                            </ul>
-                            IDE's
-                            <ul>
-                                <li>Apache NetBeans</li>
-                                <li>Visual Studio Code</li>
-                                <li>Android Studio</li>
-                                <li>Sublime Text</li>
-                                <li>Pycharm</li>
-                                <li>IntelliJ IDEA</li>
+                                <li>CAD</li>
+                                <li>CAM</li>
+                                <li>CAE</li>
                             </ul>
                         </div>
-                        <h3>Idiomas</h3>
-                        <div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/in.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Inventor
+                        </div>
+                        <div class="elemento__descripcion">
                             <ul>
-                                <li>Español (nativo)</li>
-                                <li>Inglés<div id="in"></div></li>
+                                <li>CAD</li>
+                                <li>CAM</li>
+                                <li>CAE</li>
                             </ul>
                         </div>
-                        <h3>Otros</h3>
-                        <div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/se.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Solid Edge
+                        </div>
+                        <div class="elemento__descripcion">
                             <ul>
-                                <li>Paqueteria Office<div id="off"></div></li>
-                                <li>Sistema operativo Linux (Ubuntu)<div id="lin"></div></li>
-                                <li>Ultimaker Cura<div id="cu"></div></li>
-                                <li>Adobe Photoshop<div id="ps"></div></li>
+                                <li>CAD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/3ds.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            3D's Max
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Modelado 3D</li>
+                                <li>Animaciones</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </section>
-        </header>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init({
-                    duration: 3000,
-                    once: true,
-                });
-            </script>
-    </section>
-    <footer>
-        Web de Raúl Reséndiz, todos los derechos reservados 2020
+            </article>
+            <article class="entrada">
+                <h3>Programación y desarrollo web</h3>
+                <div class="elementos">
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/j.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Java
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Programación estructurada</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Java 8</li>
+                                <li>Colecciones</li>
+                                <li>JDBC</li>
+                                <li>JSP</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/py.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Python
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Programación estructurada</li>
+                                <li>Programación orientada a objetos</li>
+                                <li>Interfaz gráfica con PyQt</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/spring.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Spring Framework
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Conexión con MySql</li>
+                                <li>Modelo MVC</li>
+                                <li>Spring Security</li>
+                                <li>Thymeleaf</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/javascript.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            JavaScript
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Programación estructurada</li>
+                                <li>DOM</li>
+                                <li>Eventos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/html.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            HTML 5
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Etiquetas</li>
+                                <li>Mejora de desempeño</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/css.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            CSS 3
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Estilos en general</li>
+                                <li>floats</li>
+                                <li>Flex Box</li>
+                                <li>CSS Grid</li>
+                                <li>Animaciones y transiciones</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/lv.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            LabView
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Conexión a microcontroladores</li>
+                                <li>Consexión con CRio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="entrada">
+                <h3>Otros</h3>
+                <div class="elementos">
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/ing.jpg">
+                        </div>
+                        <div class="elemento__titulo">
+                            Inglés
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Avanzado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/mo.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Paquetería Microsoft Office
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Word</li>
+                                <li>Excel</li>
+                                <li>Powerpoint</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="elemento__imagen">
+                            <img src="img/linux.png">
+                        </div>
+                        <div class="elemento__titulo">
+                            Linux
+                        </div>
+                        <div class="elemento__descripcion">
+                            <ul>
+                                <li>Comandos básicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+        </main>
+    </div>
+    <footer class="footer contenedor">
+        <div class="footer__texto">
+            Web de Raúl Reséndiz &copy;todos los derechos reservados 2020
+        </div>
     </footer>
     <div id="top"><i class="fa fa-chevron-circle-up"></i></div>
 </body>
+
+</html>

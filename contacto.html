@@ -1,78 +1,96 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raúl Reséndiz Contacto</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="experiencia.html" as="document">
+
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <!--Animciones-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--Responsive web design-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4d138e7a7c.js" crossorigin="anonymous"></script>
     <!--JavaScript-->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body id="global">
-    <!--Contenedor principal-->
-    <section>
-        <header id="principal">
-            <!--Titulo-->
-            <div id="logoC">
-                <div id="linkedin"><img src="img/l.png"></div>
-                <h1>Contacto</h1>
-            </div>
-            <!--div adicional para arreglar estructura-->
-            <div class="clearfix"></div>
-            <!--Menú-->
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="conocimiento.html">Conocimiento</a></li>
-                    <li><a href="intereses.html">Intereses</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <section>
-                <!--Contenido de la izquierda-->
-                <div id="post">
-                    <div id="contact"data-aos="fade-up" data-aos-duration="900">
-                        <h2>Correos:</h2>
-                        <h4>rresendizlazaro@hotmail.com</h4>
-                        <h4>rresendizlazaro@gmail.com</h4>
-                        <h2>Número de celular:</h2>
-                        <h4>5620991693</h4>
-                        <h2>Número de teléfono:</h2>
-                        <h4>5557756640</h4>
-                        <h2>Dirección:</h2>
-                        <h4>Ecatepec, Estado de México, Colonia jardines de Santa Clara, C.P. 55450</h4>
-                    </div>
-                    <form method="POST" class="contact-form" name="form1" data-aos="fade-right" data-aos-duration="900">
-                        <label for="nombre">Nombre: </label>
-                        <input id="nombre" name="nombre" type="text" />
-                        <label for="email">Email: </label>
-                        <input id="email" name="nombre" type="text" />
-                        Comentario
-                        <textarea id="opinion" name="opinion"></textarea>
-                        <input name="Submit" type="submit" value="Enviar" />
-                    </form>
-                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<body>
+    <!--Header-->
+    <header class="header3 contenedor">
+        <div class="logo">
+            <div class="social"><a href="https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/"><i class="fab fa-linkedin social__texto"></i></a></div>
+            <h1 class="nombre"> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎Contacto‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </h1>
+        </div>
+    </header>
+    <!--Menú-->
+    <div class="contenedor menu">
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__enlace"><i class="fas fa-house-user"></i> Inicio</a>
+            <a href="experiencia.html" class="navegacion__enlace"><i class="fas fa-briefcase"></i> Experiencia</a>
+            <a href="conocimiento.html" class="navegacion__enlace"><i class="fas fa-brain"></i> Habilidades</a>
+            <a href="contacto.html" class="navegacion__enlace"><i class="far fa-id-card"></i> Contacto</a>
+        </nav>
+    </div>
+    <!--Contenido-->
+    <div class="contenedor contenido-principal">
+        <!--Contenido de la izquierda-->
+        <main class="informacion">
+            <article class="entrada">
+                <div id="contact">
+                    <h3>Correos:</h3>
+                    <p class="contact__info">rresendizlazaro (@) hotmail . com</h4>
+                    <p class="contact__info">rresendizlazaro (@) gmail . com</h4>
+                    <h3>Número de celular:</h3>
+                    <p class="contact__info">(56) - 20 - 99 - 16 - 93</h4>
+                    <h3>Número de teléfono:</h3>
+                    <p class="contact__info">(55) - 57 - 75 - 66 - 40</h4>
+                    <h3>Dirección:</h3>
+                    <p class="contact__info">Ecatepec, Estado de México, Colonia jardines de Santa Clara, C.P. 55450
+                        </h4>
                 </div>
-            </section>
-        </header>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init({
-                    duration: 3000,
-                    once: true,
-                });
-            </script>
-    </section>
-    <footer>
-        Web de Raúl Reséndiz, todos los derechos reservados 2020
+                <div class="contenedor formulario">
+                    <h3 class="centrar-texto">Contacto</h3>
+                    <div class="contacto-bg"></div>
+                    <form method="POST" class="" name="form1">
+                        <div class="campo">
+                            <label class="campo__label" for="nombre">Nombre</label>
+                            <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+                        </div>
+                        <div class="campo">
+                            <label class="campo__label" for="email">E-mail</label>
+                            <input class="campo__field" type="email" placeholder="Tu E-mail" id="email">
+                        </div>
+                        <div class="campo">
+                            <label class="campo__label" for="mensaje">Mensaje</label>
+                            <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+                        </div>
+                        <div class="campo">
+                            <input class="campo__enviar" type="submit" value="Enviar" class="boton boton--primario">
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="footer contenedor">
+        <div class="footer__texto">
+            Web de Raúl Reséndiz &copy;todos los derechos reservados 2020
+        </div>
     </footer>
     <div id="top"><i class="fa fa-chevron-circle-up"></i></div>
 </body>
+
+</html>

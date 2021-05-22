@@ -1,194 +1,98 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raúl Reséndiz Experiencia</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="experiencia.html" as="document">
+
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <!--Animciones-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--Responsive web design-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--Jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css"/>
-    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css"/>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-    <!--Slider con Jquery-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!--Moment-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4d138e7a7c.js" crossorigin="anonymous"></script>
     <!--JavaScript-->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body id="global">
-    <!--Contenedor principal-->
-    <section>
-        <header id="principal">
-            <!--Titulo-->
-            <div id="logoE">
-                <div id="linkedin"><img src="img/l.png"></div>
-                <h1>Experiencia</h1>
-            </div>
-            <!--div adicional para arreglar estructura-->
-            <div class="clearfix"></div>
-            <!--Menú-->
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="conocimiento.html">Conocimiento</a></li>
-                    <li><a href="intereses.html">Intereses</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <section>
-                <!--Contenido de la izquierda-->
-                <div id="post">
-                    <div id="proyectos" data-aos="fade-up" data-aos-duration="500">
-                        <h2>Proyectos escolares desarrollados</h2>
-                        <div id="acordeon">
-                            <h3>Circuito de canicas</h3>
-                            <div>
-                                <p>
-                                    Desarrollé como parte de un proyecto en equipo un circuito de canicas, la condición
-                                    era que la canica tenía que tener como mínimo media pulgada y las medidas totales del
-                                    circuito tenían que ser de 1[m] de altura por 50[cm] de ancho.
-                                    <br>
-                                    El diseño contenía un elevador de 1[m] que funcionaba con una banda transportadora con canastas
-                                    y tenía un motorreductor como actuador, el elevador llevaba la canica hacia una rampa, en donde tenía
-                                    dos posibles caminos, en uno se hallaba una trampa y en otro una sección con un pivote para
-                                    devolver la canica hacia el elevador.
-                                </p>
-                            </div>
-                            <h3>Cortador automático de pizzas</h3>
-                            <div>
-                                <p>
-                                    Este proyecto consistía en diseñar un cortador automático de pizzas grandes (30[cm]).
-                                    Se conformaba de un cortador que se trasldaba en una corredera sobre un espárrago ACME
-                                    y una base que giraba cada cierto tiempo, de esta manera el cortador realizaba el recorrido
-                                    de ida y vuelta sobre la pizza, al finalizar un corte, la base giraba para reiniciar el ciclo.
-                                </p>
-                            </div>
-                            <h3>Elevador</h3>
-                            <div>
-                                <p>
-                                    Hice un elevador de dos pisos con 1[m] de altura total, se controlaba por medio
-                                    de dos microcontroladores: Arduino UNO y TI MSP430. Este se puede controlar por medio de la botonera
-                                    incorporada o utilizando comunicación serial por medio de un programa realizado en C#.
-                                </p>
-                                <iframe src="https://www.youtube.com/embed/iRFimYhr-dw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </iframe>
-                            </div>
-                            <h3>Gatoception</h3>
-                            <div>
-                                <p>
-                                    Proyecto realizado en C#, el objetivo era realizar un juego de gato
-                                    añadiendo en cada casilla un tablero más de gato, es decir, nueve gatos dentro de un gato.
-                                    El juego solo es para dos jugadores y la casilla de cada jugador se asigna dependiendo del turno anterior.
-                                    <img src="img/gato.JPG">
-                                    <br>
-                                    <img src="img/gato2.JPG">
-                                    <br>
-                                    <img src="img/gato3.JPG">
-                                </p>
-                            </div>
-                            <h3>Aditamento para bicicleta</h3>
-                            <div>
-                                <p>
-                                    Pensando en un dispositivo que ayude a generar un empleo, desarrollé en equipo un aditamento
-                                    que se puede incorporar en una bicicleta para montar un negocio sobre ruedas, este se puede desplazar
-                                    entre el tráfico urbano para ofrecer productos.
-                                    Toda la estructura se construyó utilizando tubo de acero de una pulgada y el armado se realizó con
-                                    soldadura y dobladora, contaba con llantas R 17 y puede soportar una carga de 100[kg]
-                                </p>
-                            </div>
-                            <h3>Encendido de motor por medio de señales mioeléctricas</h3>
-                            <div>
-                                <p>
-                                    Desarrollé junto a un compañero un circuito con electrónica analógica
-                                    para detectar una señal mioeléctrica proveniente del bicep, la señal se
-                                    adecuaba para que sirviera como indicador de encender un motor. Cuando el músculo
-                                    se tensaba, el motor encendía y al estar relajado el músculo, el motor permanecía apagado.
-                                </p>
-                            </div>
-                            <h3>Robot híbrido (serial y móvil)</h3>
-                            <div>
-                                <p>
-                                    Hice un proyecto en equipo que constaba de desarrollar un robot híbrido de servicio.
-                                    Optamos por tener una configuración serial y móvil, este se encargaría de buscar objetos
-                                    por medio de una cámara ubicada en el móvil, utilizando visión artificial y una vez que lo detectara, el serial
-                                    lo recogería utilizando una pinza.
-                                </p>
-                                <iframe src="https://www.youtube.com/embed/d4UmLK9aZpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="trabajos" data-aos="fade-down"  data-aos-duration="500">
-                        <h2><b>Experiencia profesional</b></h2>
-                        <h4>enero 2019 - diciembre 2019</h4>
-                        Fuí becario del <a href="http://www.iingen.unam.mx"><b><u>Instituto de ingeniería</u></b></a>, participando en un proyecto de divulgación
-                        científica llamado <a href="http://www.ii.unam.mx/es-mx/AlmacenDigital/Gaceta/Gaceta-Enero-Febrero-2020/Paginas/microfascinantes.aspx"><b><u>Microfascinantes</u></b></a> por parte del gobierno de le Ciudad de México, específicamente la <a href="https://www.sectei.cdmx.gob.mx/"><b><u>SECTEI</u></b></a>
-                        (Secretaría de Educación, Ciencia, Tecnología e Inovación de la Ciudad de México). El
-                        objetivo era desarrollar un dispositivo didáctico que facilitara la comprension de un concepto
-                        relacionado con la microtecnología.
-                        <br>
-                        En mi caso desarrollé un <b>"Laboratorio en miniatura"</b>, el cual consistia en armar un circuito
-                         con microcanales utilizando piezas tipo Lego® y al final se hacía pasar líquidos de diferente consistencia
-                        con ayuda de una bomba de jeringas, y el fin era de observar una reacción química al combinar
-                        los líquidos para conocer el PH de las sustancias. Todo el sistema se desarrolló utilizando impresión 3d,
-                        corte laser y corte de materiales blandos con CNC.
-                        <br>
-                        El proyecto se presentó en la fiesta de las ciencias y humanidades de la UNAM, además de diez
-                        presentaciones en la CDMX en los puntos conocidos como <a href="https://pilares.cdmx.gob.mx/"><b><u>PILARES</u></b></a> (Puntos de Inovación, Libertad, Arte, Educación y Saberes).
-                        Al finalizar las presentaciones, acudí a una entrevista en <a href="http://www.enmarcha.unam.mx/temas_2019/tema_01_101219.php"><u><b>Radio UNAM</b></u></a> en el programa de <b>Ingeniería
-                        en Marcha</b>.
-                        <div id="content"></div>
-                        <!--Slider-->
-                        <div id="slider">
-                            <div class="galeria">
-                                <div><img src="img/chip.jpg" title="Laboratorio en miniatura"></div>
-                                <div><img src="img/bomba.jpg" title="Bomba para jeringas"></div>
-                                <div><img src="img/perfil.jpg" title="Microfascinantes"></div>
-                                <div><img src="img/expo.jpg" title="Fiesta de las ciencias y humanidades 2019"></div>
-                                <div><img src="img/pilar.jpg" title="PILARES"></div>
-                                <div><img src="img/radio.jpg" title="Entrevista en Radio UNAM"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="web" data-aos="fade-right"  data-aos-duration="500">
-                        <h2>Páginas web desarrolladas</h2>
-                        <div class="web">
-                            <br>
-                            <h3>Página personal</h3>
-                            <iframe src="https://elizabethmercadomartinez.000webhostapp.com/" style="display: block; margin: 0px auto; width: 100%; height: 500px" name="pagina1"></iframe>
-                            <br>
-                            <h3>Página de youtube</h3>
-                            <iframe src="https://amelepetit.github.io/web-ame-le-petit/" style="display: block; margin: 0px auto; width: 100%; height: 500px" name="pagina2"></iframe>
-                            <br>
-                            <h3>Página de negocio</h3>
-                            <iframe src="http://postresmar4m.000webhostapp.com/" style="display: block; margin: 0px auto; width: 100%; height: 500px" name="pagina3"></iframe>
-                        </div>
-                    </div>
+
+<body>
+    <!--Header-->
+    <header class="header2 contenedor">
+        <div class="logo">
+            <div class="social"><a href="https://www.linkedin.com/in/ra%C3%BAl-eduardo-res%C3%A9ndiz-l%C3%A1zaro-540002192/"><i class="fab fa-linkedin social__texto"></i></a></div>
+            <h1 class="nombre">Experiencia</h1>
+        </div>
+    </header>
+    <!--Menú-->
+    <div class="contenedor menu">
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__enlace"><i class="fas fa-house-user"></i> Inicio</a>
+            <a href="experiencia.html" class="navegacion__enlace"><i class="fas fa-briefcase"></i> Experiencia</a>
+            <a href="conocimiento.html" class="navegacion__enlace"><i class="fas fa-brain"></i> Habilidades</a>
+            <a href="contacto.html" class="navegacion__enlace"><i class="far fa-id-card"></i> Contacto</a>
+        </nav>
+    </div>
+    <!--Contenido-->
+    <div class="contenedor contenido-principal">
+        <!--Contenido de la izquierda-->
+        <main class="informacion">
+            <article class="entrada">
+                <h3>Experiencia profesional</h3>
+                <h4>enero 2019 - diciembre 2019</h4>
+                Fuí becario del <a class="enlace" href="http://www.iingen.unam.mx"><b>Instituto de ingeniería</b></a>,
+                participando en un proyecto de divulgación
+                científica llamado <a class="enlace"
+                    href="http://www.ii.unam.mx/es-mx/AlmacenDigital/Gaceta/Gaceta-Enero-Febrero-2020/Paginas/microfascinantes.aspx"><b>Microfascinantes</b></a>
+                por parte del gobierno de le Ciudad de México, específicamente la <a class="enlace"
+                    href="https://www.sectei.cdmx.gob.mx/"><b>SECTEI</b></a>
+                (Secretaría de Educación, Ciencia, Tecnología e Inovación de la Ciudad de México). El
+                objetivo era desarrollar un dispositivo didáctico que facilitara la comprension de un concepto
+                relacionado con la microtecnología.
+                <br>
+                En mi caso desarrollé un <b>"Laboratorio en miniatura"</b>, el cual consistia en armar un
+                circuito
+                con microcanales utilizando piezas tipo Lego® y al final se hacía pasar líquidos de diferente
+                consistencia
+                con ayuda de una bomba de jeringas, y el fin era de observar una reacción química al combinar
+                los líquidos para conocer el PH de las sustancias. Todo el sistema se desarrolló utilizando
+                impresión 3d,
+                corte laser y corte de materiales blandos con CNC.
+                <br>
+                El proyecto se presentó en la fiesta de las ciencias y humanidades de la UNAM, además de diez
+                presentaciones en la CDMX en los puntos conocidos como <a class="enlace"
+                    href="https://pilares.cdmx.gob.mx/"><b>PILARES</b></a> (Puntos de Inovación,
+                Libertad, Arte, Educación y Saberes).
+                Al finalizar las presentaciones, acudí a una entrevista en <a class="enlace"
+                    href="http://www.enmarcha.unam.mx/temas_2019/tema_01_101219.php"><b>Radio
+                            UNAM</b></a> en el programa de <b>Ingeniería
+                    en Marcha</b>.
+            </article>
+            <article class="entrada">
+                <h3>Enlace a proyectos de GitHub</h3>
+                <div class="github">
+                    <a class="github__enlace" href="https://github.com/rresendizlazaro"><i class="fab fa-github-square"></i></a>
                 </div>
-            </section>
-        </header>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init({
-                    duration: 3000,
-                    once: true,
-                });
-            </script>
-    </section>
-    <footer>
-        Web de Raúl Reséndiz, todos los derechos reservados 2020
+            </article>
+        </main>
+    </div>
+    <footer class="footer contenedor">
+        <div class="footer__texto">
+            Web de Raúl Reséndiz &copy;todos los derechos reservados 2020
+        </div>
     </footer>
     <div id="top"><i class="fa fa-chevron-circle-up"></i></div>
 </body>
+
+</html>
